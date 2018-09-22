@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Former Flat Responsive Agriculture bootstrap Website Template | Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="Bootstrap Responsive Templates, Iphone Compatible Templates, Smartphone Compatible Templates, Ipad Compatible Templates, Flat Responsive Templates"/>
+<script type = "text/javascript" src = "{{ url_for('static', filename = 'js/jquery-1.11.0.min.js') }}" ></script>
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!--start-header-->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+							<div class="logo">
+								<a href="index.html"><img src="images/logo1.png" alt=""></a>  
+							</div>
+							<!--start-top-nav-->
+							 <div class="top-nav">
+								<ul>
+									<li class="active"><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span>Log in</a></li>
+									<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog1">Sign up</a></li>
+								</ul>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+				</div>
+			<!---pop-up-box---->
+					   <script src="{{url_for('static', filename='js/modernizr.custom.min.js')}}"></script>
+				<link rel= "stylesheet" type= "text/css" media="all" href= "{{ url_for('static',filename='styles/popup-box.css') }}">
+
+				<script  type="text/javascript" src="{{url_for('static', filename='js/jquery.magnific-popup.js')}}"></script>
+					<!---//pop-up-box---->
+				<div id="small-dialog" class="mfp-hide">
+						<div class="login">
+							<h3>Log In</h3>
+							<h4>Already a Member</h4>
+							<input type="text" value="Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Full Name';}" />
+							<input type="numeric" value="Aadhaar No." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Aadhaar No.';}"/>
+							<input type="submit" value="Login" />
+						</div>
+					</div>
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="signup">
+							<h3>Sign Up</h3>
+							<h4>Enter Your Details Here</h4>
+							<input type="text" class="Name" value="Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Full Name';}" />
+							<input type="text" value="State" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'State';}" />
+							<input type="text" value="city" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'city';}" />
+							<input type="numeric" class="Adhaar" value="Aadhaar No." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Aadhaar No.';}"  />
+							<input type="numeric" class="Mob" value="Mobile No." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile No.';}"  />
+							<input type="text" class="Address" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"/>
+							<input type="submit"  value="Register"/>
+						</div>
+					</div>	
+				 <script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+		<!--End-header-->
+		<div class="navgation">
+					<div class="menu">
+                         <a class="toggleMenu" href="#"><img src="images/menu-icon.png" alt="" /> </a>
+							<ul class="nav" id="nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="404.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							</ul>
+                            <!----start-top-nav-script---->
+		                     <script type="text/javascript" src="{{url_for('static', filename='js/responsive-nav.js')}}">
+							jQuery(document).ready(function($) {
+								$(".scroll").click(function(event){		
+									event.preventDefault();
+									$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+								});
+							});
+							</script>
+							<!----//End-top-nav-script---->	
+					</div>
+					<div class="search2">
+					  <form>
+						 <input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}"/>
+						 <input type="submit" value="">
+					  </form>
+					</div>	
+					<div class="clearfix"> </div>			
+			</div>
+		</div>
+		<div class="banner2">
+			<div class="container">
+				<div class="bnr-text2">
+					<h1>WHY CHOOSE US ?</h1>
+					
+				</div>
+			</div>
+		</div>
+		<!--start-about-->
+		<div class="about">
+			<div class="container">
+				<div class="about-main">
+					<div class="col-md-8 about-left">
+						<h3>ABOUT US</h3>
+						<div class="about-left-one">
+							<div class="col-md-4 about-one-left">
+								<img src="static/images/123.jpg" alt="">
+							</div>
+							<div class="col-md-8 about-one-left">
+								<h4>WE WANT EVERY FARMER RISE !</h4>
+								<p> As seeing the problems being faced by the farmers today,we have taken a step toward their progress to a better lifestyle , not actually a better one, but to create that environment where they just love their work and to provide them such a joyous and tension free life so they can live a better and happy living.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="about-left-one">
+							<div class="col-md-4 about-one-left">
+								<img src="static/images/wheat.jpg" alt="">
+							</div>
+							<div class="col-md-8 about-one-left">
+								<h4>PRODUCTION MEETS DEMAND ! HOW ?</h4>
+								<p>This is the major issue which is going to be a difficulty in coming future.Production is not meeting the population needs. Hence, it is to either double its production value to meet rising demands. What we have done is to check the proper area owned by a particular farmer of particular district so as to check overall statistics of what is actually happening by retrieving the information of every farmer, so that steps can be taken to prevent loses and to take appropriate measures.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="col-md-4 about-left">
+						<h3>OUR VALUES</h3>
+						<ul>
+							<li><a href="#">EXPERT: Deep expertise and insightful evidence-based solutions are at the heart of everything</a></li>
+							<li><a href="#">GROUNDED: Positive change starts with Indian people, so we will work closely with local communities, engaging them in every level of decision-making.</a></li>
+							<li><a href="#">IMPACTFUL: We take a long-term view so we can deliver lasting changes for farmers and their families</a></li>
+							<li><a href="#">BOLD: We model innovative new approaches and are not afraid to challenge strategies that are failing.</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--End-about-->
+		<!--start-choose-->
+		<div class="choose">
+			<div class="container">
+				<div class="choose-top">
+					<h3>WHY CHOOSE US</h3>
+					<P>We will reduce poverty by unleashing Indian farmer abilities to grow their incomes and manage their natural resources sustainably</P>
+				</div>
+				<div class="choose-bottom">
+					<div class="col-md-4 choose-left">
+						<span class="choose-one"> </span>
+						<h4><u>AGRICULTURE</u></h4>
+						<p>Agriculture in eastern India needs intense development to realise its potential.
+
+We can help farmers push up the quantity, quality and value of what they produce.
+
+Working with farmers growing crops, keeping livestock and managing fisheries, we will help ensure farmers make the most of their land.
+
+We can and we will share our expertise in growing the most appropriate and profitable crops. We can help farmers gain access to high-quality inputs, improve soil quality, conserve water and prepare for climate shocks..</p>
+					</div>
+					<div class="col-md-4 choose-left">
+						<span class="choose-two"> </span>
+						<h4><u>BUSINESS DEVELOPMENT</u></h4>
+						<p>How can you pay for the construction of a warehouse if you have no money? How can you save if you have no bank account? There is too little cash to keep Indian farming markets moving. We can help farmers and agribusinesses gain access to the finance they need.
+
+We can establish local savings associations, and help small and medium-sized businesses apply for loans. This will inject new life into markets, helping markets to grow, which not only boosts farmer profits, but also provides job opportunities for people making the move from being farmers themselves to seeking work in small towns.
+
+Funders are often reluctant to lend to high-risk, inexperienced farming businesses with no paperwork or proof they can become viable. We provide those small businesses with training on how to professionalise and develop into respected enterprises.</p>
+					</div>
+					<div class="col-md-4 choose-left">
+						<span class="choose-tre"> </span>
+						<h4><u>ENVIRONMENT</u></h4>
+						<p>Farm India promotes the sustainable management of fields, forests, grazing lands and water resources.
+
+We can use our expertise in participatory forest and rangeland management to bring farmers, governments and other stakeholders together to make agreements on using natural resources sustainably, for the benefit of all.
+
+We can help develop plans for the holistic management of landscapes, so that gains from rural development in one region are not cancelled out by losses in another.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--End-choose-->
+		 <div class="footer">
+                         <div class="container">
+                                    <div class="footer-text">
+										<p>DESIGN BY  
+										TEAM DOMINATORS</p>
+									</div>
+                         </div>
+					<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+     </div>
+</body>
+</html>
