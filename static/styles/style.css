@@ -276,7 +276,7 @@ ul.nav{
 	background-size:100% 100%;
 } 
 .banner2{
-	background:url('static/images/farmer.jpg') no-repeat;
+	background:url('../images/farmer.jpg') no-repeat;
 	min-height:700px;
 	background-size:100% 100%;
 } 
@@ -2823,3 +2823,17 @@ u {
     text-decoration-color: #ADFF2F; /*green*/
 }
 /*--end-media-quaries--*/
+
+.drop_down-item {
+	color: #fff;
+}
+
+.drop_down-item {
+	background-color: white;
+	font-family: 'Anton', sans-serif;
+	color: #000 !important;
+}
+.drop_down-item.active,
+.drop_down-item:active {
+	background-color: #8BC34A;
+}

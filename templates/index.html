@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
 <title>कृषिकर्म MAIN PAGE</title>
+	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="7678d60a-8802-4d2d-a9a5-e5851b504d1c";(function(){d=document;s=d.createElement("script");
+s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <meta name="keywords" content="Bootstrap Responsive Templates, Iphone Compatible Templates, Smartphone Compatible Templates, Ipad Compatible Templates, Flat Responsive Templates"/>
@@ -59,7 +61,7 @@
 							<input name="name" type="text" class="Name" value="Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Full Name';}" />
 							<input name="state" type="text" value="State" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'State';}" />
 							<input name= "city" type="text" value="city" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'city';}" />
-							<input name="Aadhaar" type="numeric" class="Aadhaar" value="Aadhaar No." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Aadhaar No.';}"  />
+							<input name="Aadhaar" type="numeric" class="Adhaar" value="Aadhaar No." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Aadhaar No.';}"  />
 							<input name="mobile" type="numeric" class="Mob" value="Mobile No." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile No.';}"  />
 							<input name="address" type="text" class="Address" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"/>
 							<input name="submit" type="submit"  value="Register"/>
@@ -82,14 +84,16 @@
 						});
 				</script>
 		<!--End-header-->
+				<script src href="{{ url_for('static',filename='styles/style.css') }}" rel='stylesheet' type='text/css' > </script>
 		<div class="navgation">
 					<div class="menu">
                          <a class="toggleMenu" href="#"><img src="static/images/menu-icon.png" alt="" /> </a>
 							<ul class="nav" id="nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="404.html">Services</a></li>
-							<li><a href= "contact.html">Contact</a></li>
+							<li><a href="{{url_for('home')}}">Home</a></li>
+							<li><a href="{{url_for('about')}}">About Us</a></li>
+							<li><a href="404.html">Services</a> </li>
+								<li><a href= "{{url_for('contact')}}">Contact</a></li>
+
 							</ul>
                             <!----start-top-nav-script---->
 						<script type="text/javascript" src="{{url_for('static', filename='js/responsive-nav.js')}}">
@@ -141,7 +145,7 @@
 						<div class="care-bottom-middle">
 							<img src="static/images/tree-1.png" alt="">
 							<h4>WHAT YOU WANT TO SELL ?</h4>
-							<p></p>
+							<p>We are working on everything to know about the actual price of cultivated crops in different areas. If farmers are aware of how much they can get after selling then is will automatically increase <b>INCOME</b></p>
 
 							</div>
 					</div>
@@ -149,7 +153,7 @@
 						<div class="care-bottom-right">
 							<img src="static/images/tree-2.png" alt="">
 							<h4>WHAT RATES YOU CAN HAVE!</h4>
-							<p> </p>
+							<p>The indian government is giving subsidy on very less things to farmers and at the same time those seeds,pesicides etc can be made available to farmers on genuine rates directly from wholesalers hence cutting the tax and GSTrates indirectly. </p>
 
 							</div>
 					</div>
@@ -168,8 +172,11 @@
 									<img class="port-pic" class="img-responsive" src="static/images/one-2.jpg" />
 									<div class="b-wrapper">
 										<h2 class="b-animate b-from-left b-from   b-delay03 ">
-											<span></span>
+											<span>How INCOME is AFFECTED ?
 
+											<BUTTON>A farmer’s income is the difference between input cost and selling price of his produce. Since the cost of inputs, including seeds, fertilizers, pesticides, fuel to draw out water and machines, is rising, the profit made from sale of crops is declining. .
+											</BUTTON>
+											</span>
 										</h2>
 									</div>
 								</a>
@@ -180,16 +187,18 @@
 									<img class="port-pic" src="static/images/apple.jpg" />
 									<div class="b-wrapper">
 										<h2 class="b-animate b-from-left    b-delay03 ">
-											<button>View full article</button>
+											<button >In contrast, income from non-farm employment has been on the rise thus turning farmers into one of the most deprived sections of India.
+												The Central government announces assured minimum support price every year, but that has failed to offset the rising input cost. Assured market is only available for wheat, rice, sugarcane (thanks to public distribution system) and cotton, which is why attempts of diversification tend to fail. For other crops like pulses, there are not enough buyers who offer the support price and farmers are forced to go for distress sale.</button>
 										</h2>
 									</div>
 								</a>
 						</div>
-						<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						<a href="http://www.indiawaterportal.org/topics/agriculture" class="b-link-stripe b-animate-go  thickbox">
 									<img class="port-pic" src="static/images/veg.jpg" />
 									<div class="b-wrapper">
 										<h2 class="b-animate b-from-left    b-delay03 ">
-											<button>View full article</button>
+											<span></span>
+											<button onclick=;"></button>
 										</h2>
 									</div>
 								</a>
@@ -200,8 +209,8 @@
 									<img class="port-pic" class="img-responsive" src="static/images/fd-btm1.jpg" />
 									<div class="b-wrapper">
 										<h2 class="b-animate b-from-left b-left   b-delay03 ">
-											<span>Sed in lacus ut enim adipiscing aliquet</span>
-											<button>View full article</button>
+											<span>DIRECT MARKETING</span>
+											<button>On the other hand, present-day wholesale markets have long chain of intermediaries resulting in wide gap between the producer and consumer prices. Direct marketing, which does away with intermediaries and hence gets better price to the farmers, needs to be promoted. Farmers’ markets, especially in case of vegetables, have shown good results. Such markets have also promoted diversification as farmers include a wider variety of vegetables, and maximise use of water and land resources throughout the year. </button>
 										</h2>
 									</div>
 								</a>

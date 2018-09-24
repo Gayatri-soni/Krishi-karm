@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request,redirect
+from flask import Flask, render_template,request,redirect,url_for
 import pymysql
 
 app = Flask(__name__)
@@ -8,8 +8,20 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template("index.html")
-    return render_template("contact.html")
+@app.route("/about")
+def about():
     return render_template("about.html")
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+@app.route("/home")
+def home1():
+    return render_template("index.html")
+
+
+
+
+
 
 
 @app.route("/action_signup",   methods = ["GET","POST"])

@@ -9,15 +9,17 @@
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
 <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static',filename='images/logo3.png') }}" />
 
 </head>
 <body>
+	<form method="post">
 	<!--start-header-->
 			<div id="home" class="header">
 					<div class="top-header">
 						<div class="container">
 							<div class="logo">
-								<a href="index.html"><img src="static/images/logo.png" alt=""></a>
+								<a href="index.html"><img src="static/images/logo1.png" alt=""></a>
 							</div>
 							<!--start-top-nav-->
 							 <nav class="top-nav">
@@ -51,7 +53,7 @@
 							<input name="name" type="text" class="Name" value="Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Full Name';}" />
 							<input name="state" type="text" value="State" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'State';}" />
 							<input name= "city" type="text" value="city" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'city';}" />
-							<input name="Aadhaar" type="numeric" class="Aadhaar" value="Aadhaar No." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Aadhaar No.';}"  />
+							<input name="Aadhaar" type="numeric" class="Adhaar" value="Aadhaar No." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Aadhaar No.';}"  />
 							<input name="mobile" type="numeric" class="Mob" value="Mobile No." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile No.';}"  />
 							<input name="address" type="text" class="Address" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"/>
 							<input name="submit" type="submit"  value="Register"/>
@@ -166,5 +168,6 @@
                          </div>
 					<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
      </div>
+		</form>
 </body>
 </html>
