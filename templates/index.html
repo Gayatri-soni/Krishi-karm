@@ -51,9 +51,10 @@ s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[
 							<h4>Already a Member</h4>
 							<input name="username" type="text" value="Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Full Name';}" />
 							<input name="password" type="numeric" value="Aadhaar No." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Aadhaar No.';}"/>
-							<input type="submit" value="Login" />
+							<input type="submit" value="Login" id="login" />
 						</div>
 					</div>
+
 					<div id="small-dialog1" class="mfp-hide">
 						<div class="signup">
 							<h3>Sign Up</h3>
@@ -67,6 +68,10 @@ s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[
 							<input name="submit" type="submit"  value="Register"/>
 						</div>
 					</div>
+
+
+
+
 				 <script>
 						$(document).ready(function() {
 						$('.popup-with-zoom-anim').magnificPopup({
@@ -85,16 +90,23 @@ s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[
 				</script>
 		<!--End-header-->
 				<script src href="{{ url_for('static',filename='styles/style.css') }}" rel='stylesheet' type='text/css' > </script>
-		<div class="navgation">
+
+		           <div class="navgation">
 					<div class="menu">
                          <a class="toggleMenu" href="#"><img src="static/images/menu-icon.png" alt="" /> </a>
 							<ul class="nav" id="nav">
 							<li><a href="{{url_for('home')}}">Home</a></li>
 							<li><a href="{{url_for('about')}}">About Us</a></li>
-							<li><a href="404.html">Services</a> </li>
+								<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+								  <li><a href="#">Programmes and schemes</a></li>
+								  <li><a href="#">KCC(kisan credit card)</a></li>
+								  <li><a href="#">e-nam</a></li>
+								</ul>
+								</li>
 								<li><a href= "{{url_for('contact')}}">Contact</a></li>
+								</ul>
 
-							</ul>
                             <!----start-top-nav-script---->
 						<script type="text/javascript" src="{{url_for('static', filename='js/responsive-nav.js')}}">
 							jQuery(document).ready(function($) {
@@ -108,13 +120,25 @@ s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[
 					</div>
 					<div class="search2">
 					  <form>
-						 <input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}"/>
-						 <input type="submit" value="">
+						 <!--<input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}"/>-->
+						 <!--<input type="submit" value="">-->
+						  <div id="google_translate_element"></div>
+
+							<script type="text/javascript">
+								function googleTranslateElementInit() {
+ 						 new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+												}
+									</script>
+
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 					  </form>
 					</div>
 					<div class="clearfix"> </div>
 			</div>
+
+
 		</div>
+
 		<div class="banner">
 			<div class="container">
 				<div class="bnr-text">
