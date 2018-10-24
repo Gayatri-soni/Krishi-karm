@@ -7,13 +7,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index.html")   #rendring main page/home page
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    return render_template("about.html")    #rendring about page
 @app.route("/contact")
 def contact():
-    return render_template("contact.html")
+    return render_template("contact.html")      #rendring contact page
 @app.route("/home")
 def home1():
     return render_template("index.html")
@@ -25,7 +25,7 @@ def home1():
 
 
 @app.route("/action_signup",   methods = ["GET","POST"])
-def sign_up():
+def sign_up():                      #getting data from signup page
     name = request.form.get("name")
     state=request.form.get("state")
     city= request.form.get("city")
@@ -38,8 +38,8 @@ def sign_up():
 
 
 @app.route("/action_login", methods = ["Post"])
-def login():
-    username = request.form.get("username")
+def login():                        #getting data from login page
+    username = request.form.get("username")     
     password = request.form.get("password")
     print(username,password)
     #check_validation(username)
