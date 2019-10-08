@@ -4,9 +4,9 @@ import pymysql
 app = Flask(__name__)
 
 
-
-@app.route("/")
-def home():
+#rendering the different page
+@app.route("/")  
+def home():   
     return render_template("index.html")
 @app.route("/about")
 def about():
@@ -23,7 +23,7 @@ def home1():
 
 
 
-
+#taking the signup data
 @app.route("/action_signup",   methods = ["GET","POST"])
 def sign_up():
     name = request.form.get("name")
@@ -36,7 +36,7 @@ def sign_up():
     #insert(name, aadhaar, mob)
     return render_template("index.html")
 
-
+#taking the login data
 @app.route("/action_login", methods = ["Post"])
 def login():
     username = request.form.get("username")
